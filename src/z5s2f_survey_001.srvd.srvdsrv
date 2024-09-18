@@ -1,0 +1,4 @@
+@EndUserText.label: '5S2F Survey'
+define service Z5S2F_SURVEY_001 {
+  expose ZC_5SF_Survey as Survey;
+}

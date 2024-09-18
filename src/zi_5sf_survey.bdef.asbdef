@@ -1,0 +1,49 @@
+managed;
+with draft;
+
+define behavior for ZI_5SF_SURVEY //alias <alias_name>
+implementation in class zbp_i_5sf_survey unique
+persistent table zsurvey_t
+draft table zsurvey_t_d
+lock master total etag LastChangedAt
+etag master LocalLastChangedAt
+{
+  create;
+  update;
+  delete;
+
+  field ( numbering : managed, readonly ) ResponseUUID;
+
+  mapping for ZSURVEY_T
+  {
+    ResponseUUID = response_uuid;
+    ResponseId = response_id;
+    GroupId = group_id;
+    Q1 = q1;
+    Q1Txt = q1_txt;
+    Q2 = q2;
+    Q3 = q3;
+    Q41 = q4_1;
+    Q42 = q4_2;
+    Q43 = q4_3;
+    Q44 = q4_4;
+    Q4Txt = q4_txt;
+    Q5 = q5;
+    Q5Txt = q5_txt;
+    Q6 = q6;
+    Q6Txt = q6_txt;
+    Q7 = q7;
+    Q7Txt = q7_txt;
+    Q8 = q8;
+    Q8Txt = q8_txt;
+    Q9G = q9_g;
+    Q9Nps = q9_nps;
+    Q10 = q10;
+    Q11Txt = q11_txt;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}

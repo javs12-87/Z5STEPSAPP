@@ -1,0 +1,94 @@
+@Metadata.layer: #CUSTOMER
+
+@UI: {
+  headerInfo: {
+    typeName: 'Comment', 
+    typeNamePlural: 'Comments', 
+    title: {
+      type: #STANDARD, 
+      label: 'Comment', 
+      value: 'GroupId'
+    }
+  }
+}
+annotate view ZC_5SF_Comments
+    with 
+{
+    @UI.hidden: true
+    ResponseUUID;
+    @UI.lineItem: [ {
+    position: 10 , 
+    importance: #HIGH, 
+    label: 'Session ID'
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'Session ID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10
+  } ]
+  @EndUserText.label: 'Session ID'
+    SessionName;
+    @UI.lineItem: [ {
+    position: 20 , 
+    importance: #HIGH, 
+    label: 'Content, Duration, Style, Delivery'
+  } ]
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Content, Duration, Style, Delivery'
+  } ]
+    Q4Txt;
+    @UI.lineItem: [ {
+    position: 30 , 
+    importance: #HIGH, 
+    label: 'Most Liked'
+  } ]
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Most Liked'
+  } ]
+    Q5Txt;
+    @UI.lineItem: [ {
+    position: 40 , 
+    importance: #HIGH, 
+    label: 'Comments on Time Spent'
+  } ]
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Comments on Time Spent'
+  } ]  
+    Q6Txt;
+    @UI.lineItem: [ {
+    position: 50 , 
+    importance: #HIGH, 
+    label: 'Comments on Completion'
+  } ]
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Comments on Completion'
+  } ]      
+    Q7Txt;
+    @UI.lineItem: [ {
+    position: 60 , 
+    importance: #HIGH, 
+    label: 'Comments to improve training'
+  } ]
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Comments to improve training'
+  } ]      
+    Q8Txt;
+    @UI.lineItem: [ {
+    position: 70 , 
+    importance: #HIGH, 
+    label: 'Additional Comments'
+  } ]
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'Additional Comments'
+  } ]      
+    Q11Txt;
+    
+}

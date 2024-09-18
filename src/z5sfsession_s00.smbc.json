@@ -1,0 +1,20 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "identifier Z5SFSESSION_S00",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "serviceConfiguration": {
+    "serviceBinding": "ZUI_5SFSESSION_S_O4",
+    "serviceName": "ZUI_5SFSESSION_S_O4",
+    "serviceVersion": "0001",
+    "rootEntitySet": "Session_S",
+    "name": "Session_S maintenance",
+    "configurationGroup": "",
+    "skipRootEntity": true
+  },
+  "appConfiguration": {
+    "listReport": {}
+  }
+}

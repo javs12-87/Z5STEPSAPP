@@ -1,0 +1,5 @@
+@EndUserText.label: '5SF Comments'
+define service Z5S2F_COMMENTS_SRV {
+  expose ZC_5SF_Comments as Comments;
+  expose ZVH_5SF_SESSION as Session;
+}

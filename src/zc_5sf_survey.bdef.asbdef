@@ -1,0 +1,11 @@
+projection;
+//strict; //Comment this line in to enable strict mode. The strict mode is prerequisite to be future proof regarding syntax and to be able to release your BO.
+use draft;
+
+define behavior for ZC_5SF_Survey //alias <alias_name>
+use etag
+{
+  use create;
+  use update;
+  use delete;
+}

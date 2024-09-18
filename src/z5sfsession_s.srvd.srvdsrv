@@ -1,0 +1,4 @@
+define service Z5SFSESSION_S {
+  expose ZC_5SFSESSION_S as Session_S;
+  expose ZC_5SFSESSION as Session;
+}

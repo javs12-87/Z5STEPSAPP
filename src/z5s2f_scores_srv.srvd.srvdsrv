@@ -1,0 +1,4 @@
+@EndUserText.label: '5SF SCORES'
+define service Z5S2F_SCORES_SRV {
+  expose ZC_5SF_Scores as SCORES;
+}

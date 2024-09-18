@@ -1,0 +1,99 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'Session', 
+    typeNamePlural: 'Sessions', 
+    title: {
+      type: #STANDARD, 
+      label: 'Session', 
+      value: 'SessionID'
+    }
+  }
+}
+annotate view ZC_5SFSession with
+{
+  @UI.facet: [ {
+    id: 'idSession', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'Session', 
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    importance: #HIGH, 
+    label: 'SessionID'
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'SessionID'
+  } ]
+  SessionID;
+  
+  @UI.lineItem: [ {
+    position: 20 , 
+    importance: #HIGH, 
+    label: 'SessionYear'
+  } ]
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'SessionYear'
+  } ]
+  SessionYear;
+  
+  @UI.lineItem: [ {
+    position: 30 , 
+    importance: #HIGH, 
+    label: 'SessionRegion'
+  } ]
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'SessionRegion'
+  } ]
+  SessionRegion;
+  
+  @UI.lineItem: [ {
+    position: 40 , 
+    importance: #HIGH, 
+    label: 'SessionQuarter'
+  } ]
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'SessionQuarter'
+  } ]
+  SessionQuarter;
+  
+  @UI.lineItem: [ {
+    position: 50 , 
+    importance: #HIGH, 
+    label: 'SessionSurveygroup'
+  } ]
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'SessionSurveygroup'
+  } ]
+  SessionSurveygroup;
+  
+  @UI.lineItem: [ {
+    position: 60 , 
+    importance: #HIGH, 
+    label: 'SessionName'
+  } ]
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'SessionName'
+  } ]
+  SessionName;
+  
+  @UI.hidden: true
+  CreatedAt;
+  
+  @UI.hidden: true
+  LastChangedBy;
+  
+  @UI.hidden: true
+  LastChangedAt;
+  
+  @UI.hidden: true
+  LocalLastChangedAt;
+}

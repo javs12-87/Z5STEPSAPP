@@ -1,0 +1,261 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'Survey', 
+    typeNamePlural: 'Surveys', 
+    title: {
+      type: #STANDARD, 
+      label: 'Survey', 
+      value: 'ResponseId'
+    }
+  }
+}
+annotate view ZC_5SF_Survey
+    with 
+{
+  @UI.lineItem: [ {
+    position: 20 , 
+    importance: #HIGH, 
+    label: 'ResponseId'
+  } ]
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'ResponseId'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  ResponseId;
+  
+  @UI.lineItem: [ {
+    position: 30 , 
+    importance: #HIGH, 
+    label: 'GroupId'
+  } ]
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'GroupId'
+  } ]
+  GroupId;
+  
+  @UI.lineItem: [ {
+    position: 40 , 
+    importance: #HIGH, 
+    label: 'Q1'
+  } ]
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Q1'
+  } ]
+  Q1;
+  
+  @UI.lineItem: [ {
+    position: 50 , 
+    importance: #HIGH, 
+    label: 'Q1Txt'
+  } ]
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Q1Txt'
+  } ]
+  Q1Txt;
+  
+  @UI.lineItem: [ {
+    position: 60 , 
+    importance: #HIGH, 
+    label: 'Q2'
+  } ]
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Q2'
+  } ]
+  Q2;
+  
+  @UI.lineItem: [ {
+    position: 70 , 
+    importance: #HIGH, 
+    label: 'Q3'
+  } ]
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'Q3'
+  } ]
+  Q3;
+  
+  @UI.lineItem: [ {
+    position: 80 , 
+    importance: #HIGH, 
+    label: 'Q41'
+  } ]
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'Q41'
+  } ]
+  Q41;
+  
+  @UI.lineItem: [ {
+    position: 90 , 
+    importance: #HIGH, 
+    label: 'Q42'
+  } ]
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'Q42'
+  } ]
+  Q42;
+  
+  @UI.lineItem: [ {
+    position: 100 , 
+    importance: #HIGH, 
+    label: 'Q43'
+  } ]
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'Q43'
+  } ]
+  Q43;
+  
+  @UI.lineItem: [ {
+    position: 110 , 
+    importance: #HIGH, 
+    label: 'Q44'
+  } ]
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'Q44'
+  } ]
+  Q44;
+  
+  @UI.lineItem: [ {
+    position: 120 , 
+    importance: #HIGH, 
+    label: 'Q4Txt'
+  } ]
+  @UI.identification: [ {
+    position: 120 , 
+    label: 'Q4Txt'
+  } ]
+  Q4Txt;
+  
+  @UI.lineItem: [ {
+    position: 130 , 
+    importance: #HIGH, 
+    label: 'Q5'
+  } ]
+  @UI.identification: [ {
+    position: 130 , 
+    label: 'Q5'
+  } ]
+  Q5;
+  
+  @UI.lineItem: [ {
+    position: 140 , 
+    importance: #HIGH, 
+    label: 'Q5Txt'
+  } ]
+  @UI.identification: [ {
+    position: 140 , 
+    label: 'Q5Txt'
+  } ]
+  Q5Txt;
+  
+  @UI.lineItem: [ {
+    position: 150 , 
+    importance: #HIGH, 
+    label: 'Q6'
+  } ]
+  @UI.identification: [ {
+    position: 150 , 
+    label: 'Q6'
+  } ]
+  Q6;
+  
+  @UI.lineItem: [ {
+    position: 160 , 
+    importance: #HIGH, 
+    label: 'Q6Txt'
+  } ]
+  @UI.identification: [ {
+    position: 160 , 
+    label: 'Q6Txt'
+  } ]
+  Q6Txt;
+  
+  @UI.lineItem: [ {
+    position: 170 , 
+    importance: #HIGH, 
+    label: 'Q7'
+  } ]
+  @UI.identification: [ {
+    position: 170 , 
+    label: 'Q7'
+  } ]
+  Q7;
+  
+  @UI.lineItem: [ {
+    position: 180 , 
+    importance: #HIGH, 
+    label: 'Q8'
+  } ]
+  @UI.identification: [ {
+    position: 180 , 
+    label: 'Q8'
+  } ]
+  Q8;
+  
+  @UI.lineItem: [ {
+    position: 190 , 
+    importance: #HIGH, 
+    label: 'Q8Txt'
+  } ]
+  @UI.identification: [ {
+    position: 190 , 
+    label: 'Q8Txt'
+  } ]
+  Q8Txt;
+  
+  @UI.lineItem: [ {
+    position: 200 , 
+    importance: #HIGH, 
+    label: 'Q9G'
+  } ]
+  @UI.identification: [ {
+    position: 200 , 
+    label: 'Q9G'
+  } ]
+  Q9G;
+  
+  @UI.lineItem: [ {
+    position: 210 , 
+    importance: #HIGH, 
+    label: 'Q9Nps'
+  } ]
+  @UI.identification: [ {
+    position: 210 , 
+    label: 'Q9Nps'
+  } ]
+  Q9Nps;
+  
+  @UI.lineItem: [ {
+    position: 220 , 
+    importance: #HIGH, 
+    label: 'Q10'
+  } ]
+  @UI.identification: [ {
+    position: 220 , 
+    label: 'Q10'
+  } ]
+  Q10;
+  
+  @UI.lineItem: [ {
+    position: 230 , 
+    importance: #HIGH, 
+    label: 'Q11Txt'
+  } ]
+  @UI.identification: [ {
+    position: 230 , 
+    label: 'Q11Txt'
+  } ]
+  Q11Txt;
+    
+}

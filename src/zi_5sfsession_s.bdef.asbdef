@@ -1,0 +1,60 @@
+managed;
+with draft;
+
+define behavior for ZI_5SFSESSION_S alias Session_S
+implementation in class ZBP_I_5SFSession_S unique
+draft table Z5SFSESSION_S00D
+with unmanaged save
+lock master total etag LastChangedAtMax
+
+{
+  update;
+
+  draft action Edit;
+  draft action Activate;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+  action ( features : instance ) selectTransport parameter D_SelectCustomizingTransptReqP result [1] $self;
+
+  association _Session { create; with draft; }
+}
+
+define behavior for ZI_5SFSESSION alias Session
+implementation in class ZBP_I_5SFSession unique
+persistent table Z5SF_SESSIONS
+draft table Z5SF_SESSIONS_D
+with additional save
+etag master LocalLastChangedAt
+lock dependent by _Session_S
+
+{
+  field ( readonly )
+   SingletonID;
+
+  field ( readonly : update )
+   SessionID,
+   SessionYear;
+
+
+  update;
+  delete;
+
+  mapping for Z5SF_SESSIONS
+  {
+    SessionID = SESSION_ID;
+    SessionYear = SESSION_YEAR;
+    SessionRegion = SESSION_REGION;
+    SessionQuarter = SESSION_QUARTER;
+    SessionSurveygroup = SESSION_SURVEYGROUP;
+    SessionName = SESSION_NAME;
+    CreatedAt = CREATED_AT;
+    LastChangedBy = LAST_CHANGED_BY;
+    LastChangedAt = LAST_CHANGED_AT;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+  }
+
+  association _Session_S { with draft; }
+
+  validation val_transport on save { create; update; }
+}
